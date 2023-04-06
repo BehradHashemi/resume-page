@@ -8,3 +8,20 @@ body {
     background: #212121;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.tabs {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 350px;
+    background-color: #eee;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px #ffffff80;
+}
+
+.tabs .tab-header {
+    width: 150px;
+}
