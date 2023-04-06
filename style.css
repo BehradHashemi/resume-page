@@ -25,3 +25,50 @@ body {
 .tabs .tab-header {
     width: 150px;
 }
+
+.tabs .tab-header>div {
+    width: 100%;
+    height: calc(100% / 5);
+    background-color: #ddd;
+    color: #888;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #ddd;
+    text-indent: 20px;
+    cursor: pointer;
+}
+
+.tabs .tab-header>div.active {
+    border-color: #03f40f;
+    color: #01b90a;
+    background-color: #eee;
+}
+
+.tabs .tab-content {
+    flex: 1;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.tabs .tab-content>div {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+
+}
+
+.tabs .tab-content>div.active {
+    transition: opacity .3s ease-in-out 0s;
+    opacity: 1;
+}
+
+.tabs .tab-content>div p {
+    padding: 11px 25px 0 0px;
+    line-height: 30px;
+    text-align: justify;
+
+}
