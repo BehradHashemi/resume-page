@@ -5,6 +5,7 @@ The purpose of a resume page is to make a first impression, catch the hiring man
 Input:
 - `HTML`
 - `CSS`
+- `JS`
 
 ## Social
 
